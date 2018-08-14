@@ -1,0 +1,39 @@
+{
+  "name": "what's_up,_nick?",
+  "version": "1.0.0",
+  "description": "TBC",
+  "main": "Gruntfile.js",
+  "keywords": [
+    "static",
+    "blog"
+  ],
+  "author": "Nicholas Casteen <NickRCasteen@gmail.com> (TBC)",
+  "license": "GPLv2",
+  "dependencies": {
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-jshint": "^0.11.2",
+    "highlight.js": "^9.6.0",
+    "lunr": "^0.6.0"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "compass": "^0.1.1",
+    "grunt": "^1.0.3",
+    "grunt-blogbuilder": "0.0.81",
+    "grunt-browserify": "^5.3.0",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-htmlmin": "^2.4.0",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-uglify": "^3.4.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-gh-pages": "^2.0.0",
+    "grunt-newer": "^1.3.0",
+    "grunt-sitemap": "^1.2.1",
+    "jquery": "^3.3.1",
+    "sass": "^1.10.4"
+  }
+}
