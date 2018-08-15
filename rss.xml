@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>What&apos;s Up, Nick?</title>
+        <link>TBC</link>
+        <description>TBC</description>
+        <lastBuildDate>Wed, 15 Aug 2018 16:23:48 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>grunt-blogbuilder https://github.com/matthewbdaly/grunt-blogbuilder</generator>
+        <copyright>Nicholas Casteen 2018</copyright>
+    </channel>
+</rss>

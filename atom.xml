@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id></id>
+    <title>What&apos;s Up, Nick?</title>
+    <updated>2018-08-15T16:23:48Z</updated>
+    <generator>grunt-blogbuilder https://github.com/matthewbdaly/grunt-blogbuilder</generator>
+    <author>
+        <name>Nicholas Casteen</name>
+        <email>NickRCasteen@gmail.com</email>
+        <uri>TBC</uri>
+    </author>
+    <link rel="alternate" href="TBC"/>
+    <subtitle>TBC</subtitle>
+    <rights>Nicholas Casteen 2018</rights>
+</feed>
