@@ -4,9 +4,15 @@
         <title>What&apos;s Up, Nick?</title>
         <link>TBC</link>
         <description>TBC</description>
-        <lastBuildDate>Wed, 15 Aug 2018 16:23:48 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Aug 2018 09:23:22 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>grunt-blogbuilder https://github.com/matthewbdaly/grunt-blogbuilder</generator>
         <copyright>Nicholas Casteen 2018</copyright>
+        <item>
+            <title><![CDATA[Test Post!]]></title>
+            <link>TBC/blog/2018/08/16/test-post!/</link>
+            <guid>TBC/blog/2018/08/16/test-post!/</guid>
+            <pubDate>Thu, 16 Aug 2018 09:18:23 GMT</pubDate>
+        </item>
     </channel>
 </rss>
