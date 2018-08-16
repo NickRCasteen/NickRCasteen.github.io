@@ -2,49 +2,49 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>TBC/</loc>
-    <lastmod>2018-08-16T19:19:01.034Z</lastmod>
+    <lastmod>2018-08-16T19:24:13.279Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/2018/08/16/test-post!/</loc>
-    <lastmod>2018-08-16T19:19:01.001Z</lastmod>
+    <lastmod>2018-08-16T19:24:13.249Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/archives/</loc>
-    <lastmod>2018-08-16T19:19:01.016Z</lastmod>
+    <lastmod>2018-08-16T19:24:13.261Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/categories/category/</loc>
-    <lastmod>2018-08-16T19:19:01.025Z</lastmod>
+    <lastmod>2018-08-16T19:24:13.270Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/posts/1/</loc>
-    <lastmod>2018-08-16T19:19:01.033Z</lastmod>
+    <lastmod>2018-08-16T19:24:13.278Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/programming-goings-on/</loc>
-    <lastmod>2018-08-16T19:19:01.009Z</lastmod>
+    <lastmod>2018-08-16T19:24:13.256Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/categories/category/rss.xml</loc>
-    <lastmod>2018-08-16T19:19:01.026Z</lastmod>
+    <lastmod>2018-08-16T19:24:13.271Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/rss.xml</loc>
-    <lastmod>2018-08-16T19:19:01.019Z</lastmod>
+    <lastmod>2018-08-16T19:24:13.264Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
