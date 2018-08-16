@@ -3,8 +3,8 @@
     <channel>
         <title>What&apos;s Up, Nick?</title>
         <link>TBC</link>
-        <description>TBC</description>
-        <lastBuildDate>Thu, 16 Aug 2018 09:23:22 GMT</lastBuildDate>
+        <description>I&apos;m a tech nerd for things new and old, so here&apos;s where I come to ramble about it.</description>
+        <lastBuildDate>Thu, 16 Aug 2018 09:41:12 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>grunt-blogbuilder https://github.com/matthewbdaly/grunt-blogbuilder</generator>
         <copyright>Nicholas Casteen 2018</copyright>
