@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id></id>
     <title>What&apos;s Up, Nick?</title>
-    <updated>2018-08-17T03:40:33Z</updated>
+    <updated>2018-08-17T03:42:16Z</updated>
     <generator>grunt-blogbuilder https://github.com/matthewbdaly/grunt-blogbuilder</generator>
     <author>
         <name>Nicholas Casteen</name>
@@ -18,7 +18,7 @@
         <link href="TBC/blog/2018/08/16/test-post!/">
         </link>
         <updated>2018-08-16T09:18:23Z</updated>
-        <summary type="html"><![CDATA[<p>“I’m going to just keep typing stuff until it works”</p>
+        <summary type="html"><![CDATA[<p>content: “I’m going to just keep typing stuff until it works”</p>
 ]]></summary>
     </entry>
 </feed>
