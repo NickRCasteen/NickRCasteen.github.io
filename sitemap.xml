@@ -2,49 +2,49 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>TBC/</loc>
-    <lastmod>2018-08-17T03:44:03.066Z</lastmod>
+    <lastmod>2018-08-17T09:38:45.757Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/2018/08/16/test-post!/</loc>
-    <lastmod>2018-08-17T03:44:03.034Z</lastmod>
+    <lastmod>2018-08-17T09:38:45.723Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/archives/</loc>
-    <lastmod>2018-08-17T03:44:03.048Z</lastmod>
+    <lastmod>2018-08-17T09:38:45.738Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>TBC/blog/categories/category/</loc>
-    <lastmod>2018-08-17T03:44:03.057Z</lastmod>
+    <loc>TBC/blog/categories/general/</loc>
+    <lastmod>2018-08-17T09:38:45.747Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>TBC/contact-me/</loc>
+    <lastmod>2018-08-17T09:38:45.734Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/posts/1/</loc>
-    <lastmod>2018-08-17T03:44:03.065Z</lastmod>
+    <lastmod>2018-08-17T09:38:45.756Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>TBC/programming-goings-on/</loc>
-    <lastmod>2018-08-17T03:44:03.040Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>TBC/blog/categories/category/rss.xml</loc>
-    <lastmod>2018-08-17T03:44:03.058Z</lastmod>
+    <loc>TBC/blog/categories/general/rss.xml</loc>
+    <lastmod>2018-08-17T09:38:45.748Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/rss.xml</loc>
-    <lastmod>2018-08-17T03:44:03.051Z</lastmod>
+    <lastmod>2018-08-17T09:38:45.741Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

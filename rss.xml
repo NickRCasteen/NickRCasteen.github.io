@@ -4,16 +4,20 @@
         <title>What&apos;s Up, Nick?</title>
         <link>TBC</link>
         <description>I&apos;m a tech nerd for things new and old, so here&apos;s where I come to ramble about it.</description>
-        <lastBuildDate>Fri, 17 Aug 2018 03:44:03 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 17 Aug 2018 09:38:45 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>grunt-blogbuilder https://github.com/matthewbdaly/grunt-blogbuilder</generator>
         <copyright>Nicholas Casteen 2018</copyright>
         <item>
-            <title><![CDATA[Test Butt!]]></title>
+            <title><![CDATA[Welcome to the Blog!]]></title>
             <link>TBC/blog/2018/08/16/test-post!/</link>
             <guid>TBC/blog/2018/08/16/test-post!/</guid>
             <pubDate>Thu, 16 Aug 2018 09:18:23 GMT</pubDate>
-            <description><![CDATA[<p>So it DOES go here???</p>
+            <description><![CDATA[<p>Heya!</p>
+<p>This is Nicholas Casteen reporting in. This is my dumping ground for any and<br>everything I feel like sharing. From new additions to my retro collection to<br>progress reports on programming challenges I’ve taken, there’s a fair bit to<br>see here!</p>
+<p>I’ve got a link to my github on the sidebar. Hopefully I’ll also have some<br>‘Github Project Progress’ thing there, too. This here blog’s nothing if not<br>a work in progress.</p>
+<p>And, of course, if ever you want to learn more about the author or get in<br>contact, check the ‘About’ and ‘Contact Me’ pages up in the top!</p>
+<p>S’all for now,<br>Nicko</p>
 ]]></description>
         </item>
     </channel>

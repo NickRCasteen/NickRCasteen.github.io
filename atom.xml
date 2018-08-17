@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id></id>
     <title>What&apos;s Up, Nick?</title>
-    <updated>2018-08-17T03:44:03Z</updated>
+    <updated>2018-08-17T09:38:45Z</updated>
     <generator>grunt-blogbuilder https://github.com/matthewbdaly/grunt-blogbuilder</generator>
     <author>
         <name>Nicholas Casteen</name>
@@ -13,12 +13,16 @@
     <subtitle>I&apos;m a tech nerd for things new and old, so here&apos;s where I come to ramble about it.</subtitle>
     <rights>Nicholas Casteen 2018</rights>
     <entry>
-        <title type="html"><![CDATA[Test Butt!]]></title>
+        <title type="html"><![CDATA[Welcome to the Blog!]]></title>
         <id>TBC/blog/2018/08/16/test-post!/</id>
         <link href="TBC/blog/2018/08/16/test-post!/">
         </link>
         <updated>2018-08-16T09:18:23Z</updated>
-        <summary type="html"><![CDATA[<p>So it DOES go here???</p>
+        <summary type="html"><![CDATA[<p>Heya!</p>
+<p>This is Nicholas Casteen reporting in. This is my dumping ground for any and<br>everything I feel like sharing. From new additions to my retro collection to<br>progress reports on programming challenges I’ve taken, there’s a fair bit to<br>see here!</p>
+<p>I’ve got a link to my github on the sidebar. Hopefully I’ll also have some<br>‘Github Project Progress’ thing there, too. This here blog’s nothing if not<br>a work in progress.</p>
+<p>And, of course, if ever you want to learn more about the author or get in<br>contact, check the ‘About’ and ‘Contact Me’ pages up in the top!</p>
+<p>S’all for now,<br>Nicko</p>
 ]]></summary>
     </entry>
 </feed>
