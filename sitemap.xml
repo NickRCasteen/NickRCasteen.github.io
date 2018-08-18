@@ -2,55 +2,55 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>TBC/</loc>
-    <lastmod>2018-08-18T10:30:18.504Z</lastmod>
+    <lastmod>2018-08-18T10:36:12.917Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/about/</loc>
-    <lastmod>2018-08-18T10:30:18.476Z</lastmod>
+    <lastmod>2018-08-18T10:36:12.884Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/2018/08/16/test-post!/</loc>
-    <lastmod>2018-08-18T10:30:18.465Z</lastmod>
+    <lastmod>2018-08-18T10:36:12.873Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/archives/</loc>
-    <lastmod>2018-08-18T10:30:18.487Z</lastmod>
+    <lastmod>2018-08-18T10:36:12.898Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/categories/general/</loc>
-    <lastmod>2018-08-18T10:30:18.496Z</lastmod>
+    <lastmod>2018-08-18T10:36:12.908Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/contact-me/</loc>
-    <lastmod>2018-08-18T10:30:18.481Z</lastmod>
+    <lastmod>2018-08-18T10:36:12.890Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/posts/1/</loc>
-    <lastmod>2018-08-18T10:30:18.503Z</lastmod>
+    <lastmod>2018-08-18T10:36:12.916Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/categories/general/rss.xml</loc>
-    <lastmod>2018-08-18T10:30:18.497Z</lastmod>
+    <lastmod>2018-08-18T10:36:12.911Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/rss.xml</loc>
-    <lastmod>2018-08-18T10:30:18.490Z</lastmod>
+    <lastmod>2018-08-18T10:36:12.901Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
