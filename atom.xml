@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id></id>
     <title>What&apos;s Up, Nick?</title>
-    <updated>2018-08-18T20:33:27Z</updated>
+    <updated>2018-08-20T03:58:08Z</updated>
     <generator>grunt-blogbuilder https://github.com/matthewbdaly/grunt-blogbuilder</generator>
     <author>
         <name>Nicholas Casteen</name>
@@ -12,6 +12,53 @@
     <link rel="alternate" href="TBC"/>
     <subtitle>I&apos;m a tech nerd for things new and old, so here&apos;s where I come to ramble about it.</subtitle>
     <rights>Nicholas Casteen 2018</rights>
+    <entry>
+        <title type="html"><![CDATA[Machine Learning on a Commodore64 (Part 1)]]></title>
+        <id>TBC/blog/2018/08/19/machine-learning-on-a-commodore64-(part-1)/</id>
+        <link href="TBC/blog/2018/08/19/machine-learning-on-a-commodore64-(part-1)/">
+        </link>
+        <updated>2018-08-19T21:11:11Z</updated>
+        <summary type="html"><![CDATA[<p><img src="/static/images/retro_posts/c64_learning/p1_intro.png" alt="The Future In The Past"></p>
+<p>Recently I downloaded <a href="http://www.ccs64.com/">an Emulator for the Commodore 64</a>
+and was also reminded of the fact that anachronisms are funny. This is why, when
+trying to think of projects to tackle with this old thing, I thought it’d be fun
+to see how far I could take Machine Learning on the ol’ 6510 Processor.</p>
+<p>I, myself, own a VIC-20. I haven’t brought it out of its box for a long while,
+having been distracted by other things, so my BASIC is a little rusty. So, what
+better way to start this project than to try and implement one of the more simple
+learning machines, the Perceptron. Old methods for old machines.</p>
+<p><img src="/static/images/retro_posts/c64_learning/nicvic20.jpg" alt="Nic and the Vic"></p>
+<p>Should this work, I’d like to see just how far I can go. I’m doubtful I’ll be able
+to go much further without breaking into C64 Machine Code (which I may very well
+do). My ultimate goal is to have this running on my Vic-20, so for now this is
+just a proof of concept, sorta. As in, if the C64 can’t do it, the poor Vic sure
+can’t.</p>
+<p>This first version of this will be simple, manually inputting training values with
+expected output. The skeleton roadmap is as follows:  </p>
+<p><img src="/static/images/retro_posts/c64_learning/p1_pc1.png" alt="Code 01"></p>
+<p>Here, I’m doing an easy version of the perceptron. No input_0 &amp; weight_0, I’m
+opting for a regular bias. Also, I decided to keep the learning rate at 1 so
+I’m not including it in the math.</p>
+<p>The hiccup here is “what format does data come in”? Well, again, for simplicity
+I’ll probably keep it as a string of 1s and 0s and it’ll be binary classification.
+With a string, we can break it into a list of chars and do a VAL(X$) on each to
+get their numeric value. For each one. It’s sloppy, but it <em>should</em> get the job done.</p>
+<p>As for reconnecting with Commodore BASIC, most videos were a little slow paced,
+feeling first the need to explain “no there isn’t a mouse” and “no you can’t get
+Windows on C64” before explaining and re-explaining the history of the processor.
+Thankfully, I’m able to kick it like it’s the early 80s and read from the user’s
+manual quick reference for the C64 (an online scan, of course).</p>
+<p>For my first hack at it, I wrote this out:</p>
+<p><img src="/static/images/retro_posts/c64_learning/p1_c1.png" alt="Code 01"></p>
+<p>Again, my BASIC V2 is really rusty so I’m probably missing something here. There’s
+a lot of string to real conversion knocking about in this code which makes me nervous.
+That was the easiest way to break apart a string of 1s and 0s. I’d do a little
+magic with mod10, but if the string began with a 0 I’m worried it’d be lost
+(ie 0101 becomes 101). Else it’d just halt the program. I’ll give it a try in
+the emulator when I have time tomorrow.</p>
+<p>~Nicko</p>
+]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Welcome to the Blog!]]></title>
         <id>TBC/blog/2018/08/16/test-post!/</id>

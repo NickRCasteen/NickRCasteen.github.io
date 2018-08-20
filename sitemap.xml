@@ -2,55 +2,85 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>TBC/</loc>
-    <lastmod>2018-08-18T20:33:27.889Z</lastmod>
+    <lastmod>2018-08-20T03:58:08.779Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/about/</loc>
-    <lastmod>2018-08-18T20:33:27.856Z</lastmod>
+    <lastmod>2018-08-20T03:58:08.741Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/2018/08/16/test-post!/</loc>
-    <lastmod>2018-08-18T20:33:27.843Z</lastmod>
+    <lastmod>2018-08-20T03:58:08.719Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>TBC/blog/2018/08/19/machine-learning-on-a-commodore64-(part-1)/</loc>
+    <lastmod>2018-08-20T03:58:08.721Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/archives/</loc>
-    <lastmod>2018-08-18T20:33:27.872Z</lastmod>
+    <lastmod>2018-08-20T03:58:08.754Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/categories/general/</loc>
-    <lastmod>2018-08-18T20:33:27.880Z</lastmod>
+    <lastmod>2018-08-20T03:58:08.765Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>TBC/blog/categories/machine-learning/</loc>
+    <lastmod>2018-08-20T03:58:08.763Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>TBC/blog/categories/retro/</loc>
+    <lastmod>2018-08-20T03:58:08.764Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/contact-me/</loc>
-    <lastmod>2018-08-18T20:33:27.862Z</lastmod>
+    <lastmod>2018-08-20T03:58:08.747Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/posts/1/</loc>
-    <lastmod>2018-08-18T20:33:27.888Z</lastmod>
+    <lastmod>2018-08-20T03:58:08.777Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/categories/general/rss.xml</loc>
-    <lastmod>2018-08-18T20:33:27.882Z</lastmod>
+    <lastmod>2018-08-20T03:58:08.771Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>TBC/blog/categories/machine-learning/rss.xml</loc>
+    <lastmod>2018-08-20T03:58:08.767Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>TBC/blog/categories/retro/rss.xml</loc>
+    <lastmod>2018-08-20T03:58:08.769Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/rss.xml</loc>
-    <lastmod>2018-08-18T20:33:27.874Z</lastmod>
+    <lastmod>2018-08-20T03:58:08.757Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
