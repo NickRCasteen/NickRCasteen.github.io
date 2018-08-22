@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id></id>
     <title>What&apos;s Up, Nick?</title>
-    <updated>2018-08-20T03:58:08Z</updated>
+    <updated>2018-08-22T05:04:43Z</updated>
     <generator>grunt-blogbuilder https://github.com/matthewbdaly/grunt-blogbuilder</generator>
     <author>
         <name>Nicholas Casteen</name>
@@ -12,6 +12,74 @@
     <link rel="alternate" href="TBC"/>
     <subtitle>I&apos;m a tech nerd for things new and old, so here&apos;s where I come to ramble about it.</subtitle>
     <rights>Nicholas Casteen 2018</rights>
+    <entry>
+        <title type="html"><![CDATA[Broken Bootloaders and Occam's Razor]]></title>
+        <id>TBC/blog/2018/08/22/broken-bootloaders-and-occam&apos;s-razor/</id>
+        <link href="TBC/blog/2018/08/22/broken-bootloaders-and-occam&apos;s-razor/">
+        </link>
+        <updated>2018-08-22T08:27:02Z</updated>
+        <summary type="html"><![CDATA[<p><img src="/static/images/general_posts/razor/p1_intro.png" alt="Black Screen of Death"></p>
+<p>From <a href="https://en.wikipedia.org/wiki/Occam%27s_razor">Wikipedia</a>:</p>
+<blockquote>
+<p>Occam’s razor is the problem-solving principle that the simplest solution
+ tends to be the right one.</p>
+</blockquote>
+<p>My PC has a dualboot with 2 Operating Systems, Linux Mint and Windows 10. These
+two love to bicker and fight when it comes to booting the PC, such as Safe
+Boot in the BIOS favoring the Windows bootloader over GRUB or otherwise trying
+to override a Linux liveboot. Even so, I still keep it this way. Linux is for
+work, professional and personal, and Windows is for play (and any work that
+can’t be done on Linux).</p>
+<p>So the input of the commodore 64 perceptron was put off today for a little computer
+fixing time, these OSes at each other’s throats again. A few days ago a brown-out 
+occured in the house, shutting off my PC. The thing is a monster that I built myself, 
+but its software can sometimes be a jenga tower ready to topple over.</p>
+<p>When I turned my PC back on I found GRUB in shambles. That is to say it couldn’t
+find, well, itself. So instead of giving me a handy list of loaders to choose from
+it just went straight to GRUB Rescue, a black screen/white text shell some people
+have the gall to call ‘powerful’. No, the rescue terminal is no BASH, not by a long
+shot.</p>
+<p><img src="/static/images/general_posts/razor/p1_glgb.png" alt="Good Luck, God Bless, We&#39;re All Rooting for You"></p>
+<p>This wasn’t the first time I’ve seen this screen. When I first built my PC this happened
+when I tried to load into the old Mint 17 I already had installed on my C Drive. I had
+to manually start up the GRUB menu from the rescue terminal in order to get into Linux
+to make sure everything was in order. Unfortunately, this time it wasn’t so simple.</p>
+<p>Trying to do what I did before I hit hurdle after hurdle. First, all my drives were
+unknown filesystems, meaning I had to comb through the lot of the drives to find the
+one where my Linux was hiding. From there I had to set up the root and tell GRUB
+where normal.mod was. Except it kept trying to look for normal in /boot/grub/i386/.</p>
+<p>This was confusing consider I had a 64 bit machine, x86, not a 32 bit one. In fact, I
+could even ls my way into /boot/grub/ to find normal.mod hiding in a folder called 
+/x86_64-efi/. So the file was there but grub was, for some reason, looking in the wrong spot.</p>
+<p>Combing through the internet, I began a tangled web of trying to fix this issue. I created
+a liveUSB of Linux Mint so I could use the terminal  to reinstall grub but I needed to
+mount my C drive to the /mnt/ folder in root but it’d  claim to not be able to find
+a file at a specific location despite the fact I had a file  explorer open and I was
+<em>staring right at the file it said it couldn’t find right where it said it couldn’t
+find it</em>.</p>
+<p><img src="/static/images/general_posts/razor/p1_gfdi.png" alt="Madness and Aimlessness"></p>
+<p>In my mad scramble for a solution to this increasingly maddening problem, I stumbled
+across a very short post in response to someone else tangled in the web of chaos
+that was GRUB messing up:</p>
+<blockquote>
+<p>Easier just to use Boot-Repair.
+Boot Repair -Also handles LVM, GPT, separate /boot and UEFI dual boot.:
+<a href="https://help.ubuntu.com/community/Boot-Repair">https://help.ubuntu.com/community/Boot-Repair</a></p>
+</blockquote>
+<p>As it turns out, <a href="https://sourceforge.net/projects/boot-repair/">a tool called Boot Repair</a>
+existed. You could load up the iso into a USB stick like a Linux liveboot, and it
+even had a cute little mini-desktop where you could check your drives before
+running a two-click wizard that instantly fixed it.</p>
+<p>I rebooted and everything worked. GRUB menu worked just fine, both OSes boot
+a-okay.</p>
+<p>Terminals and file crawling and errors that make no sense while combing through
+forum post after forum post…</p>
+<p>versus a USBstick and two clicks.</p>
+<p>Occam’s Razor holds true, as it turns out. It’s just a shame it also makes me feel like
+a proper idiot.</p>
+<p>~Nicko</p>
+]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Machine Learning on a Commodore64 (Part 1)]]></title>
         <id>TBC/blog/2018/08/19/machine-learning-on-a-commodore64-(part-1)/</id>
