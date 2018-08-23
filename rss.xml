@@ -4,14 +4,14 @@
         <title>What&apos;s Up, Nick?</title>
         <link>TBC</link>
         <description>I&apos;m a tech nerd for things new and old, so here&apos;s where I come to ramble about it.</description>
-        <lastBuildDate>Thu, 23 Aug 2018 19:01:07 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Aug 2018 21:10:58 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>grunt-blogbuilder https://github.com/matthewbdaly/grunt-blogbuilder</generator>
         <copyright>Nicholas Casteen 2018</copyright>
         <item>
             <title><![CDATA[Programming Challenges (Part 1 - Knuth Arrow)]]></title>
-            <link>TBC/blog/2018/08/23/programming-challenges-(part-1-knuth-arrow-and-ducci-sequence)/</link>
-            <guid>TBC/blog/2018/08/23/programming-challenges-(part-1-knuth-arrow-and-ducci-sequence)/</guid>
+            <link>TBC/blog/2018/08/23/programming-challenges-(part-1-knuth-arrow)/</link>
+            <guid>TBC/blog/2018/08/23/programming-challenges-(part-1-knuth-arrow)/</guid>
             <pubDate>Thu, 23 Aug 2018 08:06:50 GMT</pubDate>
             <description><![CDATA[<p><img src="/static/images/program_posts/DP_part1/dp_intro.png" alt="Time To Code!"></p>
 <p>On my <a href="https://github.com/NickRCasteen/Programming_Challenges">github</a> I’ve started

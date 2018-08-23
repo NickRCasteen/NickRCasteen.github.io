@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id></id>
     <title>What&apos;s Up, Nick?</title>
-    <updated>2018-08-23T19:01:07Z</updated>
+    <updated>2018-08-23T21:10:58Z</updated>
     <generator>grunt-blogbuilder https://github.com/matthewbdaly/grunt-blogbuilder</generator>
     <author>
         <name>Nicholas Casteen</name>
@@ -14,8 +14,8 @@
     <rights>Nicholas Casteen 2018</rights>
     <entry>
         <title type="html"><![CDATA[Programming Challenges (Part 1 - Knuth Arrow)]]></title>
-        <id>TBC/blog/2018/08/23/programming-challenges-(part-1-knuth-arrow-and-ducci-sequence)/</id>
-        <link href="TBC/blog/2018/08/23/programming-challenges-(part-1-knuth-arrow-and-ducci-sequence)/">
+        <id>TBC/blog/2018/08/23/programming-challenges-(part-1-knuth-arrow)/</id>
+        <link href="TBC/blog/2018/08/23/programming-challenges-(part-1-knuth-arrow)/">
         </link>
         <updated>2018-08-23T08:06:50Z</updated>
         <summary type="html"><![CDATA[<p><img src="/static/images/program_posts/DP_part1/dp_intro.png" alt="Time To Code!"></p>
