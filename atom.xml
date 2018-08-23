@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id></id>
     <title>What&apos;s Up, Nick?</title>
-    <updated>2018-08-22T21:46:03Z</updated>
+    <updated>2018-08-23T19:01:07Z</updated>
     <generator>grunt-blogbuilder https://github.com/matthewbdaly/grunt-blogbuilder</generator>
     <author>
         <name>Nicholas Casteen</name>
@@ -12,6 +12,61 @@
     <link rel="alternate" href="TBC"/>
     <subtitle>I&apos;m a tech nerd for things new and old, so here&apos;s where I come to ramble about it.</subtitle>
     <rights>Nicholas Casteen 2018</rights>
+    <entry>
+        <title type="html"><![CDATA[Programming Challenges (Part 1 - Knuth Arrow)]]></title>
+        <id>TBC/blog/2018/08/23/programming-challenges-(part-1-knuth-arrow-and-ducci-sequence)/</id>
+        <link href="TBC/blog/2018/08/23/programming-challenges-(part-1-knuth-arrow-and-ducci-sequence)/">
+        </link>
+        <updated>2018-08-23T08:06:50Z</updated>
+        <summary type="html"><![CDATA[<p><img src="/static/images/program_posts/DP_part1/dp_intro.png" alt="Time To Code!"></p>
+<p>On my <a href="https://github.com/NickRCasteen/Programming_Challenges">github</a> I’ve started
+sporadically doing programming challenges in my spare time. Since Python is the easiest
+language for me to put down and pick back up I’ve opted for doing these in that language, though
+I might see about returning to some of these in other languages.</p>
+<p>These programming challenges come from a phone app linked up to 
+<a href="https://www.reddit.com/r/dailyprogrammer/">r/dailyprogrammer</a>. Today I’m looking
+at a Beginner Challenge, Knuth’s Arrow, just for simplicity.</p>
+<p><strong><em>(BEGINNER) Knuth’s Arrow:</em></strong><br>For a lot of these programming challenges the hardest part is often trying
+to figure out just what the concept behind the challenge is. From
+<a href="https://en.wikipedia.org/wiki/Knuth%27s_up-arrow_notation">Wikipedia</a>:  </p>
+<blockquote>
+<p>In mathematics, Knuth’s up-arrow notation is a method of notation for very large 
+integers, introduced by Donald Knuth in 1976.</p>
+</blockquote>
+<p>Essentially, Knuth arrow is iterated exponentiation, the same way exponentiation
+is basically just iterated multiplication and multiplication is iterated addition.
+So one 2↑2 is the same as 2^2, since there’s only one arrow. </p>
+<p><img src="/static/images/program_posts/DP_part1/dp_knuth_ex.png" alt="Knuth in Action"></p>
+<p>Thankfully, the reason this problem is ‘beginner’ is because Knuth Arrow follows
+a pretty simple formula that just needs to be replicated in code:</p>
+<p><img src="/static/images/program_posts/DP_part1/dp_knuth.png" alt="Big Easy Formula"></p>
+<p>So, this is exactly as <a href="https://en.wikipedia.org/wiki/Knuth%27s_up-arrow_notation">Wikipedia</a> says: </p>
+<blockquote>
+<p>“…more than one arrow means iterating 
+the operation associated with one less arrow.”</p>
+</blockquote>
+<p>Right away this can be seen as a recursion problem. It’s just compounding knuth
+arrow formulas on top of one another until you reach one of two terminating cases.
+Thus, the program is fairly short:</p>
+<p><img src="/static/images/program_posts/DP_part1/dp_knuth_prog.png" alt="The Program!"></p>
+<p>For the sake of simplicity, it just runs with test values. Here shown it’s given
+test values 2↑↑4. This is expected to produce 2↑(2↑(2↑2)) or 65536. Checking our
+output we see that the program outputs exactly that:</p>
+<p><img src="/static/images/program_posts/DP_part1/dp_knuth_out.png" alt="Knuth in Action"></p>
+<p>Some of the challenge input include 5↑↑↑↑5 and 7↑↑↑↑↑3. This is an excellent
+way to test the output. Problem is, when I ran with these inputs (ie 5,5,4) the
+program would seemingly hang. A couple of print statements showed the problem.
+Or rather the lack of a problem. When they say the Knuth arrow is used to denote
+massive numbers they’re not kidding. 5↑↑↑↑5 has intermediate numbers that fill
+up multiple screens with digits you have to scroll through. It’s likely integers
+on my computer aren’t equipped to simply <em>print out</em> numbers
+from a Knuth arrow. Thus, later I’ll need to do a rewrite that simple strings
+a string for the full knuth arrow equation with no computation.</p>
+<p>Right now on my programming challenges Repo I have unfinished code for creating
+Ducci sequences, so finishing that up will be my next goal when I can find the time.</p>
+<p>~Nicko</p>
+]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Broken Bootloaders and Occam's Razor]]></title>
         <id>TBC/blog/2018/08/22/broken-bootloaders-and-occam&apos;s-razor/</id>
