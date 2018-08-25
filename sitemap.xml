@@ -2,127 +2,127 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>TBC/</loc>
-    <lastmod>2018-08-24T11:13:01.533Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.128Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/about/</loc>
-    <lastmod>2018-08-24T11:13:01.485Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.081Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/2018/08/16/test-post!/</loc>
-    <lastmod>2018-08-24T11:13:01.446Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.039Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/2018/08/19/machine-learning-on-a-commodore64-(part-1)/</loc>
-    <lastmod>2018-08-24T11:13:01.448Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.042Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/2018/08/22/broken-bootloaders-and-occam's-razor/</loc>
-    <lastmod>2018-08-24T11:13:01.450Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.048Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/2018/08/23/programming-challenges-(part-1-knuth-arrow)/</loc>
-    <lastmod>2018-08-24T11:13:01.452Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.050Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/2018/08/24/machine-learning-on-a-commodore-64-(part-2)/</loc>
-    <lastmod>2018-08-24T11:13:01.453Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.052Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/archives/</loc>
-    <lastmod>2018-08-24T11:13:01.499Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.095Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/categories/fixing_stuff/</loc>
-    <lastmod>2018-08-24T11:13:01.514Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.109Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/categories/general/</loc>
-    <lastmod>2018-08-24T11:13:01.513Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.108Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/categories/machine_learning/</loc>
-    <lastmod>2018-08-24T11:13:01.509Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.104Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/categories/programming/</loc>
-    <lastmod>2018-08-24T11:13:01.511Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.107Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/categories/retro/</loc>
-    <lastmod>2018-08-24T11:13:01.510Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.106Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/contact-me/</loc>
-    <lastmod>2018-08-24T11:13:01.489Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.085Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/posts/1/</loc>
-    <lastmod>2018-08-24T11:13:01.532Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.126Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/categories/fixing_stuff/rss.xml</loc>
-    <lastmod>2018-08-24T11:13:01.526Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.120Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/categories/general/rss.xml</loc>
-    <lastmod>2018-08-24T11:13:01.523Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.118Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/categories/machine_learning/rss.xml</loc>
-    <lastmod>2018-08-24T11:13:01.516Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.111Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/categories/programming/rss.xml</loc>
-    <lastmod>2018-08-24T11:13:01.520Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.116Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/blog/categories/retro/rss.xml</loc>
-    <lastmod>2018-08-24T11:13:01.518Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.113Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>TBC/rss.xml</loc>
-    <lastmod>2018-08-24T11:13:01.502Z</lastmod>
+    <lastmod>2018-08-25T19:52:40.098Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

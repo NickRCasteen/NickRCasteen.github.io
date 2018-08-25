@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id></id>
     <title>What&apos;s Up, Nick?</title>
-    <updated>2018-08-24T11:13:01Z</updated>
+    <updated>2018-08-25T19:52:40Z</updated>
     <generator>grunt-blogbuilder https://github.com/matthewbdaly/grunt-blogbuilder</generator>
     <author>
         <name>Nicholas Casteen</name>
@@ -10,7 +10,7 @@
         <uri>TBC</uri>
     </author>
     <link rel="alternate" href="TBC"/>
-    <subtitle>I&apos;m a tech nerd for things new and old, so here&apos;s where I come to ramble about it.</subtitle>
+    <subtitle>A blog for ongoing projects both professional and personal.</subtitle>
     <rights>Nicholas Casteen 2018</rights>
     <entry>
         <title type="html"><![CDATA[Machine Learning on a Commodore 64 (Part 2)]]></title>
