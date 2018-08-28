@@ -4,10 +4,120 @@
         <title>What&apos;s Up, Nick?</title>
         <link>TBC</link>
         <description>A blog for ongoing projects both professional and personal.</description>
-        <lastBuildDate>Sat, 25 Aug 2018 19:52:40 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 28 Aug 2018 16:28:54 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>grunt-blogbuilder https://github.com/matthewbdaly/grunt-blogbuilder</generator>
         <copyright>Nicholas Casteen 2018</copyright>
+        <item>
+            <title><![CDATA[NES Clone Fix]]></title>
+            <link>TBC/blog/2018/08/28/nes-clone-fix/</link>
+            <guid>TBC/blog/2018/08/28/nes-clone-fix/</guid>
+            <pubDate>Tue, 28 Aug 2018 09:01:19 GMT</pubDate>
+            <description><![CDATA[<p><img src="/static/images/retro_posts/NES_Fix/20180827_231459.jpg" alt="The Problem Children"></p>
+<p>I’ve owned a Yobo NES Clone system since I was 16, it’s how I’ve played all my
+NES games I’ve collected over the years. One of my favorite games to play,
+unsurprisingly, is The Legend of Zelda. Even today it’s a mellow adventure in
+a quaint pixel world I can return to. Sadly, my gold cert LoZ game started to
+become harder to get to run, and eventually it wouldn’t run at all, no matter
+how much I adjusted the cart, it wouldn’t switch on.</p>
+<p>Thus, I bought this second LoZ Cart. The grey colored re-release, since I figured
+I may as well have that version. The store that sold me the grey cart tested it
+in front of me and confirmed it to be a perfectly working cart. So I get home
+only to find the grey cart has the same error as my gold cart. Flick it on
+and my T.V reports no signal about 1 second later. My suspicions roused, I wondered
+if this was a problem with my NES, so I decided to break it open. It was a process
+I felt would be right at home being documented here.</p>
+<p><img src="/static/images/retro_posts/NES_Fix/20180827_231541.jpg" alt="The Faulty NES"></p>
+<p>The system itself is rather small, much smaller than the first gen ‘VCR’ NES
+consoles. It’s also a top-loader, and like other top-loading NES consoles it has
+no lock-out functionality nor region-locking (Between PAL and NTSC, JP carts have
+a different pin layout at 60 pins instead of 72).</p>
+<p><img src="/static/images/retro_posts/NES_Fix/20180827_231641.jpg" alt="Broken Open"></p>
+<p>Here’s the console broken open. As an aside, it annoys me when electronics hide
+their case screens under rubber feet, which this did. The rubber feet are so cheap
+I didn’t think I’d bother putting them back on.</p>
+<p><img src="/static/images/retro_posts/NES_Fix/20180827_231900.jpg" alt="Glue"></p>
+<p>The craftsman ship is a little shoddy to say the least, thought I don’t imagine
+these things sell for 25$ because of quality. Glue is strewn about the system in
+place of proper solder, and it looks to be made up of 3 generic boards, as
+spaces for resistors and capacitors are marked on the boards with nothing inserted
+into the slots.</p>
+<p><img src="/static/images/retro_posts/NES_Fix/20180827_232334.jpg" alt="Pin Side"></p>
+<p>Looking at the underside of the board it looks fairly standard, not a lot to see.
+It’s just a printed board that’s a bit dirty. There’s a lot of dirt and what looks
+to be corrosion.</p>
+<p><img src="/static/images/retro_posts/NES_Fix/Collage.png" alt="A Grody System"></p>
+<p>There’s a possibility corrosion could break a trace, though that’d more likely
+render the system totally inoperable, not just make select games not work. Of course,
+in the real world, physics can be a finicky thing. Would it be possible for
+a data line to be ever so slightly garbled such that it wouldn’t affect more
+simple games but in something like LoZ it causes problems? Probably not, though
+it’s still worth giving the boards a once-over with some q-tips and alcohol.</p>
+<p><img src="/static/images/retro_posts/NES_Fix/20180827_233046.jpg" alt="The CPU"></p>
+<p>Wanting to get a better feel for the system, I needed to find where the CPU was.
+Where was the sound chip? RAM? The boards were bare save for a few resistors
+and capacitors. Looking at it, I think this black blob is where the CPU is
+housed, considering all the traces going into it. Most likely it houses
+<em>everything</em>, all in that tiny space. Makes you appreciate how far technology has
+come.</p>
+<p><img src="/static/images/retro_posts/NES_Fix/20180827_233158.jpg" alt="Something Stray"></p>
+<p>That’s when I noticed something. One of the resistors on the board had a lead
+that had been soldered in but not snipped off. It was even touching one of the
+pins for the cartridge slot which possibly meant a short. Let that be a lesson
+as to why you should always snip your leads when you put a component into a board.</p>
+<p><img src="/static/images/retro_posts/NES_Fix/20180827_233521.jpg" alt="Test 1"></p>
+<p>However, testing with the cart still produced the error, no video signal sent to 
+the T.V. Not wanting to give up, I decided to break into the game cart itself
+to run some tests. The cart is secured with a special kind of screw, some call
+them ‘gamebit’ screws and others call them ‘security’ screws. Either way, they
+require a special kind of screwdriver I thankfully had on hand.</p>
+<p><img src="/static/images/retro_posts/NES_Fix/20180827_235454.jpg" alt="The Screwdrivers"></p>
+<p>So I got the cart opened and looked inside. I did some digging around the internet
+to find out what each of the chips were with (hopefully) a pin diagram. From the
+looks of things all the traces were nice and clean, no breaks.</p>
+<p><img src="/static/images/retro_posts/NES_Fix/20180828_000018.jpg" alt="Diagram"></p>
+<p>So, here’s a close-up of the game’s board. PRG ROM is connected to the CPU and
+holds the ‘game’ proper, so that’d be the most important part to test. Next there’s
+the MMC1A Mapper ASIC which was just for memory mapping tasks for the game.
+Something not working there would most certainly crash the game. Then there’s
+the ‘key’ chip, which was essentially the cart’s part of the old NES’s lockout
+chip handshake, essentially how the cart proved itself to be real. The last two
+chips I can’t really say. One of them is a 8K RAM chip to hold save games, backed
+up by the little watch battery you can see there. The other is a CHR ROM chip for
+storing graphics, meant to be hooked directly to the NES’s PPU.</p>
+<p><img src="/static/images/retro_posts/NES_Fix/20180828_030707.jpg" alt="Test 1"></p>
+<p>For testing, I brought out my trusty, janky, cheap Walmart multimeter for some
+continuity testing. I was able to snag a few diagrams from <a href="http://kevtris.org/nes/nestuff2.txt">here</a>
+which I have down below:</p>
+<p><img src="/static/images/retro_posts/NES_Fix/Capture1.png" alt="MMC1 Diagram"><br><img src="/static/images/retro_posts/NES_Fix/Capture2.png" alt="Cartridge Connector Diagram"></p>
+<p>I couldn’t find a diagram for the ROM chip, but I at least knew where the main
+72 pins were going, specifically which ones were tied to the PRG ROM. The testing
+process wasn’t exactly scientific, I was mostly looking for any glaring issues, like
+multiple pins that didn’t have continuity with <em>any</em> of the main pins. No such
+problem however, at least as far as I could see.</p>
+<p><img src="/static/images/retro_posts/NES_Fix/20180828_033435.jpg" alt="Test 2"></p>
+<p>I tried once more, now with this bare-bones set up. I had a flashlight trained
+on the pins, making sure each and every one had good connection between system
+and cartridge. Even so, it still didn’t work. With the power still on, I fiddled
+with the cartridge a bit, when suddenly…</p>
+<p><img src="/static/images/retro_posts/NES_Fix/20180828_033515.jpg" alt="Success??"></p>
+<p>The game suddenly sprang to life. As it turns out, the cartridge just needed
+a good jostling. I tested with the other cart, the grey one. Insert, switch on,
+jostle a little, and it’d work, very repeatable. So the consistency of the
+solution was nice, but it makes me feel like my console is on its last legs.</p>
+<p><img src="/static/images/retro_posts/NES_Fix/20180828_034959.jpg" alt="The Coming End of Poor Yobo"></p>
+<p>Still, it’s good some of the games that have seemingly gone bad have been giving new
+life now that I’ve figured out it was a problem with the system. Still, what that
+problem could be remains a mystery. The hardware running the game is so tiny, under
+that black blob of rubber that it’d be nigh impossible to properly diagnose. It’s
+almost like a specific pin needs to be temporarily disconnected and reconnected
+after power on. hence the need for jostling. Maybe the security pins, though I’d
+imagine for a top loader (since there’s no lockout chip), security pins would just
+do nothing, going to ground.</p>
+<p>Either way, I’m happy this is at least <em>partway</em> solved.</p>
+<p>~Nicko</p>
+]]></description>
+        </item>
         <item>
             <title><![CDATA[Machine Learning on a Commodore 64 (Part 2)]]></title>
             <link>TBC/blog/2018/08/24/machine-learning-on-a-commodore-64-(part-2)/</link>
