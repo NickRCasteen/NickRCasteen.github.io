@@ -4,10 +4,93 @@
         <title>What&apos;s Up, Nick?</title>
         <link>TBC</link>
         <description>A blog for ongoing projects both professional and personal.</description>
-        <lastBuildDate>Tue, 28 Aug 2018 16:28:54 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 07 Sep 2018 04:25:25 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>grunt-blogbuilder https://github.com/matthewbdaly/grunt-blogbuilder</generator>
         <copyright>Nicholas Casteen 2018</copyright>
+        <item>
+            <title><![CDATA[Trying Out Julia]]></title>
+            <link>TBC/blog/2018/09/06/trying-out-julia/</link>
+            <guid>TBC/blog/2018/09/06/trying-out-julia/</guid>
+            <pubDate>Thu, 06 Sep 2018 06:42:15 GMT</pubDate>
+            <description><![CDATA[<p><img src="/static/images/program_posts/TOJ/Intro.png" alt="Brave New Jule"></p>
+<p>It’s been a while. Between work and just working on different things I’ve been
+studying this little coding language I found out about
+<a href="http://news.mit.edu/2018/mit-developed-julia-programming-language-debuts-juliacon-0827">in this news post</a>
+called Julia. It’s apparently made to combine the best features of various programming languages
+like C, Python, Ruby and many others.</p>
+<p>I’ve downloaded it and have since been poking at the
+<a href="https://docs.julialang.org/en/v1/">VERY extensive documentation</a> for the language.
+This post will be going over what I’ve noticed so far, specifically what I’ve liked.</p>
+<p><img src="/static/images/program_posts/TOJ/p1.png" alt="Typing"></p>
+<p>The first thing to get out of the way is that, like Python, Julia is dynamically
+typed. This is always nice for beginners but is sometimes a pain for veteran
+programmers. And while it’s a pretty petty gripe in this age of modern hi-powered
+computers at under 300$, the number 44 hardly needs to be an Int64 when it really
+only needs to be an Int8, but Int64 is the default on my x86 machine.</p>
+<p><img src="/static/images/program_posts/TOJ/p2.png" alt="Workaround?"></p>
+<p>There’s a feature for specifying type but it only works in the local scope of functions.
+Functions themselves can also be typed, so they can be forced to return an Int8 or
+something. The only definitive workaround is to specify the number in binary or
+hex, in which case Julia will give it the absolute minimum type it needs. Again, with
+computer hardware having memory measured in gigabytes this isn’t exactly a huge issue.
+The only problem would be with integer division, though Julia seems to default to
+float values when doing division.</p>
+<p>The more I look into Julia the more I like what I see. There’s a lot of quality of
+life features, just those little syntax touches you always desperately wanted to be
+in other languages but they never were. Take the power function: In python, raising
+one number to the power of another number is done using a built-in function:</p>
+<p><img src="/static/images/program_posts/TOJ/p3.png" alt="Python Power"></p>
+<p>That’s slightly awkward. Typically when typed out, x to the power of y is just
+x^y. It’s so simple and you <em>want</em> to type that and for it to work but it
+absolutely won’t. Julia, on the other hand, actually addresses this tiny detail:</p>
+<p><img src="/static/images/program_posts/TOJ/p4.png" alt="Julia Power"></p>
+<p>Much easier. It’s such a small thing, but it’s these small things that make a difference
+towards readability. It’s all about making important operations simple, making this not only
+easy to learn but also just more compact to use.</p>
+<p>For another example, take array operations. Arrays have always been a big deal but they’re
+even more important now with Neural networks and data mining. Being able to more easily
+code array operations AND read array operation code is a pretty big deal:</p>
+<p><img src="/static/images/program_posts/TOJ/p5.png" alt="Julia Power"></p>
+<p>Finally, this is another really minor thing but I love this so much: Like C, strings
+in Julia are treated as an array of characters. However, unlike C, creating strings
+isn’t such a huge issue. You can make your string like it’s python, then reference
+characters like it’s a string array in C. Literally the best of both worlds. I
+imagine this can be a powerful tool for easier argument parsing.</p>
+<p><img src="/static/images/program_posts/TOJ/p6.png" alt="Julia Power"></p>
+<p>The last thing I want to note before I go into the test program I had made is
+the functions in Julia. Typically, when a function is called with parameters then
+the function essentially creates its own copies of those parameters to use in its scope.
+The only programming language I can really recall having a way to alter the caller’s
+variables is in C, using pass-by-reference, ie function(&amp;x, &amp;y). Even then, that’s
+just the function making a copy of the memory address it can edit directly. Julia
+is different in that it uses pointers by default, meaning that if you don’t want
+the caller’s variables changed you have to make explicit copies in the function
+itself.</p>
+<p>To me, this is more intuitive to first-time programmers. After all, it makes more
+sense that variables passed to a function should be the same variables used within
+that function. Making explicit copies, in my opinion, enhances readability if
+it’s sometimes easy to forget functions have their own copies that they use.</p>
+<p>With that, I had decided to remake my old Knuth arrow code in Julia. Nothing like
+programming challenges to break into a new language.:</p>
+<p><img src="/static/images/program_posts/TOJ/p7.png" alt="Julia Power"></p>
+<p>Comparing to the python code it barely looks any different, so it’s very python-like.
+Still, the power function is much more straightforward, and the end of every if
+statement is more clearly defined.</p>
+<p>Checking the output in powershell, it’s exactly the same as the python program:</p>
+<p><img src="/static/images/program_posts/TOJ/p8.png" alt="Julia Power"></p>
+<p>I’m really excited to start playing around with Julia, seeing what else I can do
+with it. If I have any updates as to projects I start in Julia, I’ll be sure to
+post about it here. As for the future of Julia…I say it’s looking bright. It’s
+definitely prioritized readability and usability. It’s even compatible with C code,
+so it’s looking to be a useful tool, especially in our data-science focused world.
+Julia just hit v1.0 and I’ll be excited to see what features future updates bring.
+It might not be 100% ready for widespread use, but I think it makes a pretty good
+learner’s program even at first glance and it has pretty clear priorities. He’s to
+seeing what it does!</p>
+<p>~Nicko</p>
+]]></description>
+        </item>
         <item>
             <title><![CDATA[NES Clone Fix]]></title>
             <link>TBC/blog/2018/08/28/nes-clone-fix/</link>
@@ -17,8 +100,8 @@
 <p>I’ve owned a Yobo NES Clone system since I was 16, it’s how I’ve played all my
 NES games I’ve collected over the years. One of my favorite games to play,
 unsurprisingly, is The Legend of Zelda. Even today it’s a mellow adventure in
-a quaint pixel world I can return to. Sadly, my gold cert LoZ game started to
-become harder to get to run, and eventually it wouldn’t run at all, no matter
+a quaint pixel world I can return to. Sadly, my gold cart LoZ game started to
+become harder to get to run, and eventually it wouldn’t run at all. No matter
 how much I adjusted the cart, it wouldn’t switch on.</p>
 <p>Thus, I bought this second LoZ Cart. The grey colored re-release, since I figured
 I may as well have that version. The store that sold me the grey cart tested it
