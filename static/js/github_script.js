@@ -4,7 +4,7 @@
 var request = new XMLHttpRequest();
 const app = document.getElementById('root');
 
-request.open('GET', 'http://ghibliapi.herokuapp.com/films', true);
+request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
 
 request.onload = function () {
 
@@ -23,7 +23,7 @@ request.onload = function () {
       
       //ADDED FLAIR.
       movie.description = movie.description.substring(0,300); //all locals
-      desc.textContent = '${movie.description}...'; //Ah, I see.
+      desc.textContent = `${movie.description}...`; //Ah, I see.
         //The string we make the text content is the value of movie.description
         //Which we've trimmed to 300 characters. $ denotes value of a string var.
         //Then, following is always 3 dots. That's what shall be put.
