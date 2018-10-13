@@ -4,7 +4,7 @@
 var request = new XMLHttpRequest();
 const app = document.getElementById('root');
 
-request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
+request.open('GET', 'http://ghibliapi.herokuapp.com/films', true);
 
 request.onload = function () {
 
