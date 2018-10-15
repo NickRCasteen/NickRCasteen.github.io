@@ -3033,7 +3033,7 @@ tbody.collapse.in{
     transition-timing-function:ease
 }
 
-.card {
+.card,html input[type=button],input[type=reset],input[type=submit]{
   height: 25rem;
   width: 30rem;
   font-size: 15px;
