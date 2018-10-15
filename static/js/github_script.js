@@ -60,7 +60,7 @@ request.onload = function () {
       card.setAttribute('class', 'btn btn-primary');
       card.setAttribute('data-toggle', 'modal');
       card.setAttribute('data-target', `#${event.id}`);
-      card.innerHTML(`mh4.textContent`);
+      card.innerHTML = mh4.textContent;
       //Text
       const h1 = document.createElement('p');
       h1.textContent = mh4.textContent;
