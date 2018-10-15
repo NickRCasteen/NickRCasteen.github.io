@@ -13,7 +13,8 @@ request.onload = function () {
 
   if (request.status >= 200 && request.status < 400) {
     data.forEach(event => {
-      const card = document.createElement('div');
+      
+      const card = document.createElement('button');
       card.setAttribute('class', 'card');
       
       const h1 = document.createElement('h1');
