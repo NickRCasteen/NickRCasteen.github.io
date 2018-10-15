@@ -71,8 +71,8 @@ request.onload = function () {
       //+++ APPENDING +++
       //This is where we place our card and its children right where they belong.
       app.appendChild(card);
-      card.appendChild(h1);
-      card.appendChild(h2);
+      //card.appendChild(h1);
+      //card.appendChild(h2);
       
     });
   } else {
