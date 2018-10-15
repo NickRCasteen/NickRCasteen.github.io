@@ -3,6 +3,7 @@
 
 var request = new XMLHttpRequest();
 const app = document.getElementById('root');
+const full = document.getElementById('full');
 
 request.open('GET', 'https://api.github.com/events', true);
 
@@ -36,7 +37,7 @@ request.onload = function () {
       modal_body.setAttribute('class', 'modal-body')
             
       //Modal assembly into Document
-      app.appendChild(modal);
+      full.appendChild(modal);
       modal.appendChild(modal_diag);
       modal_diag.appendChild(modal_cont);
       modal_cont.appendChild(modal_header);
