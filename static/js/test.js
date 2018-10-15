@@ -13,11 +13,11 @@ mh4.textContent = 'Try It Out';
 const d2 = "userProfileLabel";
 const d1 = "userProfile";
 
-modal.setAttribute('id', `#${d1}`);
+modal.setAttribute('id', `${d1}`);
 modal.setAttribute('class', 'modal');
 modal.setAttribute('tabindex', '-1');
 modal.setAttribute('role', 'dialog');
-modal.setAttribute('aria-labelledby', `#${d2}`);
+modal.setAttribute('aria-labelledby', `${d2}`);
 modal.setAttribute('aria-hidden', 'true');
       
 modal_diag.setAttribute('class', 'modal-dialog');
@@ -26,7 +26,7 @@ modal_diag.setAttribute('class', 'modal-dialog');
 modal_cont.setAttribute('class', 'modal-content');
       
 modal_header.setAttribute('class', 'modal-header');
-modal_header.setAttribute('id', `#${d2}`);
+modal_header.setAttribute('id', `${d2}`);
       
 modal_body.setAttribute('class', 'modal-body');
       
