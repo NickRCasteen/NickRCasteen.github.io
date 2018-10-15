@@ -28,7 +28,7 @@ request.onload = function () {
       
       //Attribute setting for the modal
       modal.setAttribute('id', `#${event.id}`);
-      modal.setAttribute('class', 'modal.fade');
+      modal.setAttribute('class', 'modal fade');
       modal.setAttribute('tabindex', '-1');
       modal.setAttribute('role', 'dialog');
       modal.setAttribute('aria-labelledby', `h_info${event.id}`);
