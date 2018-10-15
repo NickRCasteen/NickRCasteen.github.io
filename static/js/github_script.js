@@ -17,10 +17,10 @@ request.onload = function () {
       const card = document.createElement('button');
       card.setAttribute('class', 'card');
       
-      const h1 = document.createElement('h1');
+      const h1 = document.createElement('p');
       h1.textContent = `${event.actor.display_login} on ${event.repo.name}`;
       
-      const h2 = document.createElement('h2');
+      const h2 = document.createElement('h6');
       h2.textContent = event.type;
 
       
