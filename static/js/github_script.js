@@ -14,20 +14,52 @@ request.onload = function () {
   if (request.status >= 200 && request.status < 400) {
     data.forEach(event => {
       
+      //HERE IS THE MODAL. This will display 'more information'. 
+      const modal = document.createElement('div');
+      const modal_diag = document.createElement('div');
+      const modal_cont = document.createElement('div');
+      const modal_header = document.createElement('div');
+      const modal_body = document.createElement('div');
+      const mh4 = document.createElement('h4')
+      mh4.textContent = `${event.actor.display_login} on ${event.repo.name}`;
+      const mp = document.createElement('p');
+      mp.textContent = `Public: ${event.public}...Event Created: ${event.created_at}`;
+      
+      //Attribute setting for the modal
+      modal.setAttribute('id', `#${event.id}`);
+      modal.setAttribute('class', 'modal fade');
+      modal.setAttribute('tabindex', '-1');
+      modal.setAttribute('role', 'dialog');
+      modal_diag.setAttribute('class', 'modal-dialog');
+      modal_cont.setAttribute('class', 'modal-content')
+      modal_header.setAttribute('class', 'modal-header')
+      modal_body.setAttribute('class', 'modal-body')
+            
+      //Modal assembly into Document
+      app.appendChild(modal);
+      modal.appendChild(modal_diag);
+      modal_diag.appendChild(modal_cont);
+      modal_cont.appendChild(modal_header);
+      modal_cont.appendChild(modal_body);
+      modal_header.appendChild(mh4);
+      modal_body.appendChild(mp);
+      
+      //HERE IS THE PARENT BUTTON. It's given the card class and the ability
+      //to toggle modals.
       const card = document.createElement('button');
       card.setAttribute('class', 'card');
-      
+      card.setAttribute('data-toggle', 'modal');
+      card.setAttribute('data-target', `#${event.id}`);
+      //Text
       const h1 = document.createElement('p');
-      h1.textContent = `${event.actor.display_login} on ${event.repo.name}`;
-      
+      h1.textContent = mh4.textContent;
+      //Text
       const h2 = document.createElement('h6');
       h2.textContent = event.type;
 
-      
-      //ADDED FLAIR.
+      //+++ APPENDING +++
+      //This is where we place our card and its children right where they belong.
       app.appendChild(card);
-      
-      //Every card gets h1 and p
       card.appendChild(h1);
       card.appendChild(h2);
       
