@@ -35,7 +35,7 @@ request.onload = function () {
       modal.setAttribute('aria-hidden', 'true');
       
       modal_diag.setAttribute('class', 'modal-dialog');
-      modal_diag.setAttribute('role', 'document');
+      //modal_diag.setAttribute('role', 'document');
       
       modal_cont.setAttribute('class', 'modal-content');
       
