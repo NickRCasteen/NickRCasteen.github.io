@@ -3,7 +3,7 @@
 
 var request = new XMLHttpRequest();
 const app = document.getElementById('root');
-const full = document.getElementById('full');
+//const full = document.getElementById('full');
 
 request.open('GET', 'https://api.github.com/events', true);
 
@@ -31,13 +31,22 @@ request.onload = function () {
       modal.setAttribute('class', 'modal.fade');
       modal.setAttribute('tabindex', '-1');
       modal.setAttribute('role', 'dialog');
+      modal.setAttribute('aria-labelledby', `h_info${event.id}`);
+      modal.setAttribute('aria-hidden', 'true');
+      
       modal_diag.setAttribute('class', 'modal-dialog');
-      modal_cont.setAttribute('class', 'modal-content')
-      modal_header.setAttribute('class', 'modal-header')
-      modal_body.setAttribute('class', 'modal-body')
+      
+      modal_cont.setAttribute('class', 'modal-content');
+      
+      modal_header.setAttribute('class', 'modal-header');
+      modal_header.setAttribute('id', `h_info${event.id}`);
+      
+      modal_body.setAttribute('class', 'modal-body');
+      
+      mh4.setAttribute('class', 'modal-title');
             
       //Modal assembly into Document
-      full.appendChild(modal);
+      document.appendChild(modal);
       modal.appendChild(modal_diag);
       modal_diag.appendChild(modal_cont);
       modal_cont.appendChild(modal_header);
