@@ -57,9 +57,10 @@ request.onload = function () {
       //HERE IS THE PARENT BUTTON. It's given the card class and the ability
       //to toggle modals.
       const card = document.createElement('button');
-      card.setAttribute('class', 'card');
+      card.setAttribute('class', 'btn btn-primary');
       card.setAttribute('data-toggle', 'modal');
       card.setAttribute('data-target', `#${event.id}`);
+      card.innerHTML(`mh4.textContent`);
       //Text
       const h1 = document.createElement('p');
       h1.textContent = mh4.textContent;
