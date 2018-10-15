@@ -47,7 +47,7 @@ request.onload = function () {
       mh4.setAttribute('class', 'modal-title');
             
       //Modal assembly into Document
-      full.insertBefore(modal, document.getElementById('app_container'));
+      document.body.insertBefore(modal, full);
       modal.appendChild(modal_diag);
       modal_diag.appendChild(modal_cont);
       modal_cont.appendChild(modal_header);
