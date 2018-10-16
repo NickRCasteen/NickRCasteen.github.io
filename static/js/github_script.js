@@ -224,7 +224,7 @@ function resetBody()
         <!-- THIS IS WHERE THE MODALS WILL GO-->
         <div class="row">
             <div class="col-md-12">
-                <table id='sorter_tab'></table>
+                <table align="center" id='sorter_tab'></table>
             </div>
             
         </div>
