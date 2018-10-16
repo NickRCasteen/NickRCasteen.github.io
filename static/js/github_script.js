@@ -96,10 +96,12 @@ function modalCreation(event)
     mp.innerHTML = `Public: ${event.public}<br>Event Created: ${event.created_at}<br>`;
     
     avi.setAttribute("src", `${event.actor.avatar_url}`);
+    avi.setAttribute("width", "100");
+    avi.setAttribute("height", "100");
     
     if(event.hasOwnProperty('org'))
     {
-        orgdesc.innerHTML = `<img src=${event.org.avatar_url}>From the Oragnization of ${event.org.login}`;
+        orgdesc.innerHTML = `<img src=${event.org.avatar_url} width="100" height="100">From the Oragnization of ${event.org.login}`;
     }
             
     //MODAL TREE ASSEMBLY
