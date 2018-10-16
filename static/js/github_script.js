@@ -152,14 +152,14 @@ function resetBody()
     
         <div class="container">
         <!-- THIS IS WHERE THE MODALS WILL GO-->
-        <div class="col-md-3">
+        <div class="col-md-1">
                 <button type="button" class="btn btn-primary" onclick='refresh()'>
                     Refresh
                 </button>
         </div>
         
         <div class="row">
-            <div class="col-md-9" id="root">
+            <div class="col-md-11" id="root">
                 <table id='sorter_tab'></table>
             </div>
             
