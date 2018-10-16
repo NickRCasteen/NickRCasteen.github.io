@@ -97,7 +97,7 @@ function modalCreation(event)
     
     avi.setAttribute("src", `${event.actor.avatar_url}`);
     
-    if (event["org"] !== 0)
+    if(event.hasOwnProperty('org'))
     {
         orgdesc.innerHTML = `<img src=${event.org.avatar_url}>From the Oragnization of ${event.org.login}`;
     }
