@@ -1,6 +1,8 @@
 
 function refresh()
 {
+    app.innerHTML = ""
+    
     var request = new XMLHttpRequest();
     const app = document.getElementById('root');
     const full = document.getElementById('full');
