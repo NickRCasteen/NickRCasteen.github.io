@@ -143,15 +143,12 @@ function resetBody()
             
         </div>
     </div>
-    
-    
+
     <footer>
         <div class="container footercontainer">
             <div class="col-md-12">
                 <p class="copyright">Copyright &copy; Nicholas Casteen 2018.</p>
             </div>
         </div>
-    </footer>
-    <script type="text/javascript" src="/static/js/all.min.js"></script>
-    <script type="text/javascript">refresh()</script>"`;
+    </footer>`;
 }
