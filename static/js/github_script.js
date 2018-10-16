@@ -213,11 +213,11 @@ function resetBody()
             <div class="jumbotron">
                 <h1>Github Event Dashboard</h1>
                 <h2>A web application to show a feed of events on Github, via their REST API</h2>
-            </div>
-            </div>
-            <button type="button" class="btn btn-primary" onclick='refresh()'>
+                <button type="button" class="btn btn-primary" onclick='refresh()'>
                     Refresh
-            </button>
+                </button>
+            </div>
+            </div>
         </header>
     
         <div class="container">
