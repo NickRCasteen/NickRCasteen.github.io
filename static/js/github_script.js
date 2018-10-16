@@ -85,12 +85,12 @@ function modalCreation(event)
     modal_body.setAttribute('class', 'modal-body');
       
     mh4.setAttribute('class', 'modal-title');
-    mh4.textContent = `${event.actor.display_login}`;
+    mh4.innerHTML = `<a href=${event.actor.url}}>${event.actor.display_login}</a>`;
     
-    mh42.textContent = `${event.repo.name}`;
+    mh42.innerHTML = `<a href=${event.repo.url}>${event.repo.name}</a>`;
     mh42.setAttribute("class", "repository");
     
-    mp.innerHTML = `Public: ${event.public}<br>Event Created: ${event.created_at}`;
+    mp.innerHTML = `Public: ${event.public}<br>Event Created: ${event.created_at}<br>`;
             
     //MODAL TREE ASSEMBLY
     document.body.appendChild(modal);
