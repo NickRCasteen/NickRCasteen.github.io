@@ -11,65 +11,26 @@
     <link rel="stylesheet" type="text/css" href="/static/css/style.min.css" media="all">
     <link rel="icon" type="image/png" href="/static/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/static/images/favicon-16x16.png" sizes="16x16">
-    <title>Assignment</title>
+    <title>Praeses Github Event Dashboard</title>
+    <script type="text/javascript" src="/static/js/github_script.js"></script>
 </head>
 
 <body>
- <!-- RAGE TEST -->
- <div class="modal fade" id="userProfile" tabindex="-1" role="dialog" aria-labelledby="userProfileLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="userProfileLabel">User Profile</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="form">
-                        <div class="form-group">
-                            <label id="SETTINGusername">Username</label>
-                        </div>
-                        <div class="form-group">
-                            <label id="SETTINGemail">Email</label>
-                        </div>
-                        <div class="form-group">
-                            <label id="SETTINGfirstname">First Name</label>
-                        </div>
-                        <div class="form-group">
-                            <label id="SETTINGlastname">Last Name</label>
-                        </div>
-                        <div class="form-group">
-                            <a class="btn btn-link" href="/editUser">Change User Information</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-    </div>
-
-    
-    
-    <!-- RAGE TEST -->
 
     <div class="container" id="full">
         <!-- THIS IS WHERE THE MODALS WILL GO-->
         <div class="row" id="app_container">
             <div class="col-md-8" id="root">
-                <!-- RAGE TEST -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#userProfile">
-                    Launch demo modal
-                </button>
-                <!-- RAGE TEST -->
+                
             </div>
             <div class="col-md-4">
-                
+                <button type="button" class="btn btn-primary" onclick="refresh()">
+                    Refresh
+                </button>
             </div>
         </div>
     </div>
+    
     
     <footer>
         <div class="container footercontainer">
@@ -79,7 +40,7 @@
         </div>
     </footer>
     <script type="text/javascript" src="/static/js/all.min.js"></script>
-    <script type="text/javascript" src="/static/js/github_script.js"></script>
+    <script type="text/javascript">refresh()</script>
 </body>
 
 </html>
