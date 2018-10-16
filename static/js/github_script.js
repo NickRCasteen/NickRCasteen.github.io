@@ -62,6 +62,9 @@ function modalCreation(event)
     const mh4 = document.createElement('h4');
     const mh42 = document.createElement('h4');
     const mp = document.createElement('p');
+    const avi = document.createElement('img');
+    //const orgavi = document.createElement('img');
+    const orgdesc = document.createElement('p');
       
     //MAIN MODAL ATTRIBUTE SET
     modal.setAttribute('id', `${event.id}`);
@@ -85,12 +88,19 @@ function modalCreation(event)
     modal_body.setAttribute('class', 'modal-body');
       
     mh4.setAttribute('class', 'modal-title');
-    mh4.innerHTML = `<a href=${event.actor.url}}>${event.actor.display_login}</a>`;
+    mh4.textContent = `${event.actor.display_login}`;
     
-    mh42.innerHTML = `<a href=${event.repo.url}>${event.repo.name}</a>`;
+    mh42.textContent = `${event.repo.name}`;
     mh42.setAttribute("class", "repository");
     
     mp.innerHTML = `Public: ${event.public}<br>Event Created: ${event.created_at}<br>`;
+    
+    avi.setAttribute("src", `${event.actor.avatar_url}`);
+    
+    if (event["org"] !== 0)
+    {
+        orgdesc.innerHTML = `<img src=${event.org.avatar_url}>From the Oragnization of ${event.org.login}`;
+    }
             
     //MODAL TREE ASSEMBLY
     document.body.appendChild(modal);
@@ -98,9 +108,11 @@ function modalCreation(event)
     modal_diag.appendChild(modal_cont);
     modal_cont.appendChild(modal_header);
     modal_cont.appendChild(modal_body);
+    modal_header.appendChild(orgdesc);
     modal_header.appendChild(mh4);
     modal_header.appendChild(mh42);
     modal_body.appendChild(mp);
+    modal_body.appendChild(avi);
 }
 
 
