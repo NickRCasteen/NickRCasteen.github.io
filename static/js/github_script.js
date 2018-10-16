@@ -25,7 +25,7 @@ function refresh()
                 
                 if (col_count%3 === 0)
                 {
-                    var tempor = document.createElement('tr');
+                    const tempor = document.createElement('tr');
                     table.appendChild(tempor);
                 }
                 //HERE IS THE MODAL. This will display 'more information'. 
