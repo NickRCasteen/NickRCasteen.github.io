@@ -20,7 +20,7 @@ function refresh()
         if (request.status >= 200 && request.status < 400) {
             //Set up variables.
             var col_count = 0; //The counter for columns in the grid.
-            const tempor = null;
+            var tempor = null;
             
             data.forEach(event => {
                 
