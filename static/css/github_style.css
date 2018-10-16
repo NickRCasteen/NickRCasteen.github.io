@@ -7,7 +7,7 @@
 /*Basic card CSS.*/
 .card,html input[type=button],input[type=reset],input[type=submit]{
   height: 25vh;
-  width: 25vw;
+  width: 15vw;
   font-size: 15vw;
   margin: 1vw;
   background: white;
