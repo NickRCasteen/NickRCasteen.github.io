@@ -26,7 +26,7 @@ request.onload = function () {
       mp.textContent = `Public: ${event.public}...Event Created: ${event.created_at}`;
       
       //Attribute setting for the modal
-      modal.setAttribute('id', `#${event.id}`);
+      modal.setAttribute('id', `${event.id}`);
       modal.setAttribute('class', 'modal');
       modal.setAttribute('tabindex', '-1');
       modal.setAttribute('role', 'dialog');
@@ -57,10 +57,10 @@ request.onload = function () {
       //HERE IS THE PARENT BUTTON. It's given the card class and the ability
       //to toggle modals.
       const card = document.createElement('button');
-      card.setAttribute('class', 'btn btn-primary');
+      card.setAttribute('class', 'card');
       card.setAttribute('data-toggle', 'modal');
       card.setAttribute('data-target', `#${event.id}`);
-      card.innerHTML = mh4.textContent;
+      //card.innerHTML = mh4.textContent;
       //Text
       const h1 = document.createElement('p');
       h1.textContent = mh4.textContent;
@@ -71,8 +71,8 @@ request.onload = function () {
       //+++ APPENDING +++
       //This is where we place our card and its children right where they belong.
       app.appendChild(card);
-      //card.appendChild(h1);
-      //card.appendChild(h2);
+      card.appendChild(h1);
+      card.appendChild(h2);
       
     });
   } else {
