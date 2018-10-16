@@ -1,11 +1,14 @@
 
 function refresh()
 {
-    app.innerHTML = ""
+    
+    
     
     var request = new XMLHttpRequest();
     const app = document.getElementById('root');
     const full = document.getElementById('full');
+    
+    app.innerHTML = ""
 
     request.open('GET', 'https://api.github.com/events', true);
 
