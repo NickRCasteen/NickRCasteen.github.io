@@ -20,12 +20,13 @@ function refresh()
         if (request.status >= 200 && request.status < 400) {
             //Set up variables.
             var col_count = 0; //The counter for columns in the grid.
+            const tempor = null;
             
             data.forEach(event => {
                 
                 if (col_count%3 === 0)
                 {
-                    const tempor = document.createElement('tr');
+                    tempor = document.createElement('tr');
                     table.appendChild(tempor);
                 }
                 //HERE IS THE MODAL. This will display 'more information'. 
