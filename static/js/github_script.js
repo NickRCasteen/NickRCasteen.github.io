@@ -129,7 +129,17 @@ function cardCreation(event, row)
 
 function resetBody()
 {
-    document.body.innerHTML = `<div class="container">
+    document.body.innerHTML = `
+        <header>
+        <div class="container headercontainer">
+            <div class="jumbotron">
+                <h1>Github Event Dashboard</h1>
+                <h2>A web application to show a feed of events on Github, via their REST API</h2>
+            </div>
+            </div>
+        </header>
+    
+        <div class="container">
         <!-- THIS IS WHERE THE MODALS WILL GO-->
         <div class="col-md-3">
                 <button type="button" class="btn btn-primary" onclick='refresh()'>
