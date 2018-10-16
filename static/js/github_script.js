@@ -60,6 +60,7 @@ function modalCreation(event)
     const modal_header = document.createElement('div');
     const modal_body = document.createElement('div');
     const mh4 = document.createElement('h4');
+    const mh42 = document.createElement('h4');
     const mp = document.createElement('p');
       
     //MAIN MODAL ATTRIBUTE SET
@@ -84,9 +85,12 @@ function modalCreation(event)
     modal_body.setAttribute('class', 'modal-body');
       
     mh4.setAttribute('class', 'modal-title');
-    mh4.textContent = `${event.actor.display_login} on ${event.repo.name}`;
+    mh4.textContent = `${event.actor.display_login}`;
     
-    mp.textContent = `Public: ${event.public}<br>Event Created: ${event.created_at}`;
+    mh42.textContent = `${event.repo.name}`;
+    mh42.setAttribute("class", "repository");
+    
+    mp.innerHTML = `Public: ${event.public}<br>Event Created: ${event.created_at}`;
             
     //MODAL TREE ASSEMBLY
     document.body.appendChild(modal);
@@ -95,6 +99,7 @@ function modalCreation(event)
     modal_cont.appendChild(modal_header);
     modal_cont.appendChild(modal_body);
     modal_header.appendChild(mh4);
+    modal_header.appendChild(mh42);
     modal_body.appendChild(mp);
 }
 
@@ -111,12 +116,17 @@ function cardCreation(event, row)
     card.setAttribute('data-target', `#${event.id}`);
     
     //HEADER TEXT
-    const h1 = document.createElement('p');
-    h1.textContent = `${event.actor.display_login} on ${event.repo.name}`;
+    const h1 = document.createElement('h4');
+    h1.textContent = `${event.actor.display_login}`;
+    h1.setAttribute("class", "gituser");
+    
+    const h2 = document.createElement('h4');
+    h2.textContent = `${event.repo.name}`;
+    h2.setAttribute("class", "repository");
     
     //MAIN TEXT
-    const h2 = document.createElement('h6');
-    h2.textContent = event.type;
+    const h3 = document.createElement('h6');
+    h3.textContent = event.type;
 
     //+++ APPENDING +++
     //This is where we place our card and its children right where they belong.
@@ -124,6 +134,7 @@ function cardCreation(event, row)
     cell.appendChild(card);
     card.appendChild(h1);
     card.appendChild(h2);
+    card.appendChild(h3);
 }
 
 
