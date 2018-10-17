@@ -4292,8 +4292,8 @@ a.badge:focus,a.badge:hover{
 }
 .container .jumbotron,.container-fluid .jumbotron{
     border-radius:6px;
-    padding-left:15px;
-    padding-right:15px
+    padding-left:7vw;
+    padding-right:7vw
 }
 .jumbotron .container{
     max-width:100%
