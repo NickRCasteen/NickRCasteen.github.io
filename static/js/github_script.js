@@ -223,7 +223,7 @@ function resetBody()
             </div>
         </header>
     
-        <div class="container">
+        <div class="container" width = 60vw>
         <!-- THIS IS WHERE THE MODALS WILL GO-->
         <div class="row">
             <div class="col-md-12">
