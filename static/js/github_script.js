@@ -121,9 +121,13 @@ function modalCreation(event, rep_url)
     
     //======================================================================================
     //TEXT ATTRIBUTE SET - DATE
-    var datetime_helper = event.created_at;
+    var datetime_helper = new Date(event.created_at);
     
-    mp.innerHTML = `Public: ${event.public}<br>Event Created: ${event.created_at}<br>`;
+    var time_string = datetime_helper.toDateString();
+    
+    time_string = time_string + " " + datetime_helper.getHours() + " : " + datetime_helper.getMinutes();
+    
+    mp.innerHTML = `Public: ${event.public}<br>Event Created: ${time_string}<br>`;
     //======================================================================================
     
     
