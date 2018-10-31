@@ -39,7 +39,11 @@ function refresh()
                         //Apply new <tr> to the table
                         table.appendChild(tempor);
                     }
-                repo_request.onload = build(event);
+                repo_request.onload = function(){
+                        
+                        var data2 = JSON.parse(this.response); // This is for the repo API stuff
+                        build(event, data2);
+                    };
                 
                 repo_request.send();
                 
@@ -239,7 +243,7 @@ function resetBody()
     </footer>`;
 }
 
-function build(event)
+function build(event, data2)
 {
     //Every loop counts columns up by 1
     //Every 3rd column places a new <tr> in the table.
@@ -248,7 +252,7 @@ function build(event)
     //as to where any other cards are in the table. Rows completed
     //are inaccessable.
     
-    var data2 = JSON.parse(this.response); // This is for the repo API stuff
+    
     
 
                 
