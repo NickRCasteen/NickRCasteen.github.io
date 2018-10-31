@@ -13,6 +13,7 @@ function refresh()
     
     
     var request = new XMLHttpRequest();
+    var repo_request = new XMLHttpRequest(); //HTTP request just for the User's repo
     const table = document.getElementById('sorter_tab'); //the id for our HTML table
     
     
@@ -21,35 +22,27 @@ function refresh()
     request.onload = function () {
 
         // It begins
-        var data = JSON.parse(this.response);
 
         if (request.status >= 200 && request.status < 400) {
+            var data = JSON.parse(this.response);
             //Set up variables.
             var col_count = 0; //The counter for columns in the grid.
             var tempor = null; //This is an object that stores <tr> elements
             var num_columns = 3; //The number of columns we want for our cards.
             
             data.forEach(event => {
+                repo_request.open('GET', event.url, true); //HERE IT COMES.
+                    if (col_count%num_columns === 0)
+                    {
+                        //Create and reference a new <tr> in tempor
+                        tempor = document.createElement('tr');
+                        //Apply new <tr> to the table
+                        table.appendChild(tempor);
+                    }
+                repo_request.onload = build(event);
                 
-                //Every loop counts columns up by 1
-                //Every 3rd column places a new <tr> in the table.
-                //Since each new <tr> is loaded into the same 'tempor' var
-                //then each card can safely be appended inside without worry
-                //as to where any other cards are in the table. Rows completed
-                //are inaccessable.
-                if (col_count%num_columns === 0)
-                {
-                    //Create and reference a new <tr> in tempor
-                    tempor = document.createElement('tr');
-                    //Apply new <tr> to the table
-                    table.appendChild(tempor);
-                }
+                repo_request.send();
                 
-                //HERE IS THE MODAL. This will display 'more information'. 
-                modalCreation(event);
-                
-                //HERE IS THE PARENT BUTTON. It's given the card class and the ability
-                //to toggle modals.
                 cardCreation(event, tempor);
                 
                 //Column count +1. The col_count%num_columns limits the
@@ -72,7 +65,7 @@ function refresh()
 //*******************************************************************************************************
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% [ MODAL CREATION ] %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 //*******************************************************************************************************
-function modalCreation(event)
+function modalCreation(event, rep_url)
 {
     //>> COMPONENT CREATION <<
     // :: MODAL NESTED DIVS ::
@@ -88,6 +81,7 @@ function modalCreation(event)
     // :: MODAL VISUAL FLUFF ::
     const avi = document.createElement('img');
     const orgdesc = document.createElement('p');
+    const repo_url = document.createElement('p');
       
     //MAIN MODAL ATTRIBUTE SET
     modal.setAttribute('id', `${event.id}`);
@@ -120,6 +114,9 @@ function modalCreation(event)
     
     //TEXT ATTRIBUTE SET
     mp.innerHTML = `Public: ${event.public}<br>Event Created: ${event.created_at}<br>`;
+    
+    //TEXT ATTRIBUTE SET
+    repo_url.innerHTML = `<a href = ${rep_url}>Link</a>`;
     
     //VISUAL FLUFF: USER AVITAR ATTRIBUTE SET
     avi.setAttribute("src", `${event.actor.avatar_url}`);
@@ -227,7 +224,7 @@ function resetBody()
         <!-- THIS IS WHERE THE MODALS WILL GO-->
         <div class="row">
             <div class="col-md-12">
-                <table align="center" id='sorter_tab'></table>
+                <table align="center" width=100% id='sorter_tab'></table>
             </div>
             
         </div>
@@ -240,4 +237,25 @@ function resetBody()
             </div>
         </div>
     </footer>`;
+}
+
+function build(event)
+{
+    //Every loop counts columns up by 1
+    //Every 3rd column places a new <tr> in the table.
+    //Since each new <tr> is loaded into the same 'tempor' var
+    //then each card can safely be appended inside without worry
+    //as to where any other cards are in the table. Rows completed
+    //are inaccessable.
+    
+    var data2 = JSON.parse(this.response); // This is for the repo API stuff
+    
+
+                
+    //HERE IS THE MODAL. This will display 'more information'. 
+    modalCreation(event, data2.html_url);
+                
+    //HERE IS THE PARENT BUTTON. It's given the card class and the ability
+    //to toggle modals.
+
 }
