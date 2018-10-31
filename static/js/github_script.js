@@ -178,15 +178,18 @@ function cardCreation(event, row)
     
     //HEADER TEXT
     const h1 = document.createElement('h4');
-    h1.textContent = `${event.actor.display_login}`;
+    h1.textContent = `Nick (ME) `;
     h1.setAttribute("class", "gituser");
     
     //HEADER 2 TEXT
     const h2 = document.createElement('h4');
     //This is to cut down on the repo name, which can get crazy long. 27 char limit.
     var temp = event.repo.name
-    if(temp.length > 27) temp = temp.substring(0,27);
-    h2.textContent = `${temp}`;
+    temp = temp.split("/");
+    temp[0] = "NICK";
+    var fin = temp[0] + "/" +temp[1];
+    if(fin.length > 27) fin = fin.substring(0,27);
+    h2.textContent = `${fin}`;
     h2.setAttribute("class", "repository");
     //Both headers use a custom CSS class just to change text.
     
