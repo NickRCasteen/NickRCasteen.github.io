@@ -13,7 +13,7 @@ function refresh()
     
     
     var request = new XMLHttpRequest();
-    var repo_request = new XMLHttpRequest(); //HTTP request just for the User's repo
+    
     const table = document.getElementById('sorter_tab'); //the id for our HTML table
     
     
@@ -31,6 +31,8 @@ function refresh()
             var num_columns = 3; //The number of columns we want for our cards.
             
             data.forEach(event => {
+                var repo_request = new XMLHttpRequest(); //HTTP request just for the User's repo
+                
                 repo_request.open('GET', event.url, true); //HERE IT COMES.
                     if (col_count%num_columns === 0)
                     {
@@ -116,8 +118,14 @@ function modalCreation(event, rep_url)
     mh42.textContent = `${event.repo.name}`;
     mh42.setAttribute("class", "repository");
     
-    //TEXT ATTRIBUTE SET
+    
+    //======================================================================================
+    //TEXT ATTRIBUTE SET - DATE
+    var datetime_helper = event.created_at;
+    
     mp.innerHTML = `Public: ${event.public}<br>Event Created: ${event.created_at}<br>`;
+    //======================================================================================
+    
     
     //TEXT ATTRIBUTE SET
     repo_url.innerHTML = `<a href = ${rep_url}>Link</a>`;
